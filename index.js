@@ -9,8 +9,8 @@ import cookieParser from 'cookie-parser';
 import logger from './middleware/logger.js';
 
 // import routes
-import userRoutes from './routes/user.js';
-import bookRoutes from './routes/book.js';
+import userRoutes from './routes/userRoutes.js';
+import bookRoutes from './routes/bookRoutes.js';
 
 // load environment variables
 dotenv.config();

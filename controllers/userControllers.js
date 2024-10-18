@@ -58,6 +58,10 @@ const userControllers = {
                 message: 'Email does not exist. Please register.'
             });
         }
+
+        //save user id as a cookie (needed while adding user_id while creating a new book)
+        res.cookie('userId', userExist.id);
+
         //check if the password is correct
         bcrypt.compare(password, userExist.password, (err, isValid) => {
             if (err) {

@@ -1,0 +1,10 @@
+<nav>
+    <li><a href="/api/books">Books</a></li>
+  <% if(token){%>
+    <li><a href="/api/add-book">Add Book</a></li>
+    <li><a href="/api/logout">Logout</a></li>
+  <%} else {%>
+    <li><a href="/api/login">Login</a></li>
+    <li><a href="/api/register">Register</a></li>
+  <%}%>
+</nav>

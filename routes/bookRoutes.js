@@ -22,6 +22,6 @@ router.get('/add-book', verifyToken, addBookForm);
 router.post('/add-book', verifyToken, addBook);
 router.put('/books/:id', verifyToken, update);
 router.delete('/books/:id', verifyToken, remove);
-router.get('/get-book/:id', verifyToken, getBooksByUser);
+router.get('/books-by-user/:id', verifyToken, getBooksByUser);
 
 export default router;
